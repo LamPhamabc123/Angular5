@@ -51,13 +51,14 @@ export class UserComponent {
         this.unusable = undefined;
         this.u = undefined;
         this.n = null;
+        
     }
 
     showAge() {
         return this.age + 2;
     }
 
-    addNumbers(num1: number, num2: number) {
+    addNumbers(num1: number, num2: number): number {
         return num1 + num2;
     }
 
