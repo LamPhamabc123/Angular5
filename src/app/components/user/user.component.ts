@@ -14,13 +14,21 @@ import { Component } from '@angular/core';
 
 export class UserComponent {
     // Properties
-    firstName: 'Lam';
-    last: 'Pham';
-    age: 30;
+    firstName = 'Lam';
+    lastName = 'Pham';
+    age = 30;
+    address = {
+        street: '54 Le Van Huan',
+        district: 'Tan Binh',
+        city: 'HCM'
+    }
 
     // Methods
     constructor() {
-        console.log('Hello User ...');
+        this.sayHello();
+        console.log(this.age);
+        this.hasBirthday();
+        console.log(this.age);
     }
 
     sayHello() {
@@ -28,6 +36,6 @@ export class UserComponent {
     }
 
     hasBirthday() {
-        this.age +=1;
+        this.age += 1;
     }
 }
