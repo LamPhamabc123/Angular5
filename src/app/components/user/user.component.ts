@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { User } from '../../models/User';
 
@@ -14,23 +14,27 @@ import { User } from '../../models/User';
     // `]
 })
 
-export class UserComponent {
+export class UserComponent implements OnInit {
     // Properties
     user: User;
 
     // Methods
     constructor() {
-        this.user = {
-            firstName: 'Lam',
-            lastName: 'Pham',
-            age: 30,
+        
+   }
 
-            address: {
-                street: '54 Le Van Huan',
-                city: 'HCM',
-                district: 'Tan Binh'
-            }
+   ngOnInit() {
+    this.user = {
+        firstName: 'Lam',
+        lastName: 'Pham',
+        age: 30,
+
+        address: {
+            street: '54 Le Van Huan',
+            city: 'HCM',
+            district: 'Tan Binh'
         }
+    }
    }
 }
 
