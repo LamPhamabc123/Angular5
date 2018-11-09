@@ -25,17 +25,11 @@ export class UserComponent {
 
     // Methods
     constructor() {
-        this.sayHello();
-        console.log(this.age);
-        this.hasBirthday();
-        console.log(this.age);
+        
     }
 
-    sayHello() {
-        console.log(`Hello ${this.firstName}`);
+    showAge() {
+        return this.age + 2;
     }
 
-    hasBirthday() {
-        this.age += 1;
-    }
 }
