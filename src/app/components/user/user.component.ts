@@ -36,6 +36,7 @@ export class UserComponent {
     }
 
     hasBirthday() {
-        this.age += 1;
+        this.age += 2;
+        
     }
 }
